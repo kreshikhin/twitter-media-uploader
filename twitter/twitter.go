@@ -38,8 +38,6 @@ func (self *Twitter) MakeTwitWithMedia(text string, media []byte){
         fmt.Println("Can't init media", err)
     }
 
-    return;
-
     fmt.Println(mediaInitResponse)
 
     mediaId := mediaInitResponse.MediaId
